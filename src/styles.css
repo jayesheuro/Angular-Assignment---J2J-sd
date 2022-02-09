@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --black: #171717;
+  --gray: #444444;
+  --pink: #da0037;
+  --white: #ededed;
+}
+body {
+  font-family: Poppins !important;
+  min-height: 100vh;
+}

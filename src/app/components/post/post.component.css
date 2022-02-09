@@ -1,0 +1,13 @@
+.postCard {
+  border-radius: 10px;
+  border: 2px solid var(--gray);
+  min-height: 15rem;
+  padding: 1rem;
+  text-align: left;
+}
+.titled {
+  font-size: 1.2rem;
+  color: var(--pink);
+  font-weight: 600;
+  text-align: left;
+}

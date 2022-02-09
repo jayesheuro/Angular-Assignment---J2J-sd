@@ -1,0 +1,14 @@
+.ass2Wrapper {
+  background-color: #ffffff;
+  overflow-x: hidden;
+  font-family: Poppins;
+  padding: 2rem 2rem;
+  min-height: 100vh;
+}
+.assTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem 0;
+  color: var(--pink);
+}

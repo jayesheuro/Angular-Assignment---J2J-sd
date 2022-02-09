@@ -1,0 +1,44 @@
+<div class="formWrapper">
+    <div class="formTitle">
+        Enter employee data :&nbsp;
+    </div>
+    <form class="assForm" [formGroup]="userData">
+        <label class="formLabel">Name:&nbsp;</label>
+        <input class='formInputItem' placeholder="Jayesh Singh" formControlName="userName">
+
+        <label class="formLabel">Email:&nbsp;</label>
+        <input class='formInputItem' placeholder="jayeshsingh@gmail.com" formControlName="userEmail">
+
+        <div class="flexFormRow">
+            <div class="formItem">
+                <label class="formLabel">Phone:&nbsp;</label>
+                <input class='formInputItem' placeholder="10 digit number" formControlName="userPhone">
+            </div>
+            <div class="formItem">
+                <label class="formLabel">DOB:&nbsp;</label>
+                <input class='formInputItem' type="date" formControlName="userDOB" placeholder="Date of birth">
+            </div>
+        </div>
+        
+        <!-- <hr> -->
+        <div formGroupName="userAddress" class="assForm2">        
+            <label class="formLabel">Address (plot no, colony):&nbsp;</label>
+            <input class='formInputItem' placeholder="79/88 Shipra Path" formControlName="userPlot">
+
+            <div class="flexFormRow">
+                <div class="formItem">
+                    <label class="formLabel">City:&nbsp;</label>
+                    <input class='formInputItem' placeholder="Jaipur" formControlName="userCity">
+                </div>
+                <div class="formItem">
+                    <label class="formLabel">State:&nbsp;</label>
+                    <input class='formInputItem' placeholder="Rajasthan" formControlName="userState">
+                </div>
+            </div>
+        </div>
+
+        <button class="submitFormButton" (click)="handleFormSubmit()">
+            Submit
+        </button>
+    </form>
+</div>

@@ -1,0 +1,14 @@
+<div class="postsWrapper">
+    <div class="postsDiv" *ngFor="let post of posts">
+        <app-post [post]=post></app-post>
+    </div>
+    <div class="paginationBar">
+        <button class="paginateButton" (click)="pageDown()" [disabled]="prevDisabled">
+            Previous
+        </button>
+        <span class="pageNumberText">Showing {{poststart}} to {{postend}} of {{totalpost}} posts</span>
+        <button class="paginateButton" (click)="pageUp()" [disabled]="nextDisabled">
+            Next
+        </button>
+    </div>
+</div>
